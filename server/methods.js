@@ -45,6 +45,6 @@ Meteor.methods({
     }
   },
   addressToLatLng: function(addressString){
-    // Do Stuff
+    return 
   }
 });

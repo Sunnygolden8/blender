@@ -1,5 +1,6 @@
 /* CSS declarations go here */
 #map {
-    min-height: 550px;
+    height: 100%;
     min-width: 100%;
+	position: relative;
   }

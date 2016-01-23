@@ -23,7 +23,8 @@ Template.map.events({
 
 Template.map.rendered = function(){
   L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
-  var map = L.map(('map'),{
+  var map = L.map(('map'), //'map' from the map.html
+  {
     doubleClickZoom: false,
     touchZoom: false
   }).setView([50.5, 30.5], 13);
@@ -38,6 +39,7 @@ Template.map.rendered = function(){
   // Finally bind the containerNode to the popup
   marker.bindPopup(containerNode).openPopup();
 
+  //record the location of the marker 
   map.on("click", function(e){
     console.log(e.latlng);
   });
